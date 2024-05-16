@@ -14,7 +14,8 @@ import { UpdateMealComponent } from './Dashbourd/update-meal/update-meal.compone
 import { MainComponent } from './Dashbourd/main/main.component';
 
 const routes: Routes = [
-  {    path:'',component:HomeComponent  },
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
+  {    path:'home',component:HomeComponent  },
   {    path:'about',component:AboutComponent  },
   {    path:'menu',component:MenuComponent  },
   {    path:'gallery',component:GalleryComponent  },
