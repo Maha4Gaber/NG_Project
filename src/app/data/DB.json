@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Maha",
+      "password": "123456",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Rania",
+      "password": "123456",
+      "role": "user"
+    }
+  ],
+  "meals": [
+    {
+      "id": 1,
+      "name": "meal1"
+    },
+    {
+      "id": 2,
+      "name": "meal2"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "userid": "1",
+      "username": "Maha",
+      "text":"review"
+    }
+  ],
+  "orders": [
+    {
+      "id":1,
+      "mealid":1,
+      "userid":1
+  },
+  {
+    "id":2,
+    "mealid":1,
+    "userid":1
+},
+{
+  "id":3,
+  "mealid":1,
+  "userid":1
+}
+
+  ]
+}
