@@ -15,18 +15,18 @@ import { MainComponent } from './Dashbourd/main/main.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {    path:'home',component:HomeComponent  },
-  {    path:'about',component:AboutComponent  },
-  {    path:'menu',component:MenuComponent  },
-  {    path:'gallery',component:GalleryComponent  },
-  {    path:'reviews',component:ReviewsComponent  },
-  {    path:'contact',component:ContactComponent  },
-  {    path:'login',component:LoginComponent  },
-  {    path:'addmeal',component:AddMealComponent  },
-  {    path:'addadmin',component:AddAdminComponent  },
-  {    path:'updatemeal/:id',component:UpdateMealComponent},
-  {    path:'dashboard',component:MainComponent  },
-  {    path:'**',component:ErorrComponent  },
+  {path:'home',component:HomeComponent  },
+  {path:'about',component:AboutComponent  },
+  {path:'menu',component:MenuComponent  },
+  {path:'gallery',component:GalleryComponent  },
+  {path:'reviews',component:ReviewsComponent  },
+  {path:'contact',component:ContactComponent  },
+  {path:'login',component:LoginComponent  },
+  {path:'addmeal',component:AddMealComponent  },
+  {path:'addadmin',component:AddAdminComponent  },
+  {path:'updatemeal/:id',component:UpdateMealComponent},
+  {path:'dashboard',component:MainComponent  },
+  {path:'**',component:ErorrComponent  },
 ];
 
 @NgModule({
