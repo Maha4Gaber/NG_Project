@@ -1,1 +1,41 @@
-<p>orders works!</p>
+<div class="row">
+  <button class="w-auto fs-6 border-0 fw-bold" routerLink="/dashboard">
+    back
+  </button>
+</div>
+<div class="row my-3">
+  <div class="col-6">
+    <h1 class="w-100">All Orders</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <table class="table table-bordered table-hover">
+      <thead>
+        <tr>
+          <th style="width: 5%">id</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Role</th>
+          <th style="width: 5%"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of orders">
+          <td>{{ item.id }}</td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.email }}</td>
+          <td>{{ item.role }}</td>
+          <td>
+            <button
+              class="w-auto fs-6 border-0 fw-bold"
+              (click)="delete(item.id)"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
