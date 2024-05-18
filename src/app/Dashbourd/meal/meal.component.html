@@ -5,15 +5,15 @@
 </div>
 <div class="row my-3">
   <div class="col-6">
-    <h1 class="w-100">All Users</h1>
+    <h1 class="w-100">All Meals</h1>
   </div>
   <div class="col-6">
     <div class="row text-end">
       <button
         class="w-auto m-auto fs-4 border-0 fw-bold"
-        routerLink="/addadmin"
+        routerLink="/addmeal"
       >
-        Add New User
+        Add New Meal
       </button>
     </div>
   </div>
@@ -24,18 +24,20 @@
       <thead>
         <tr>
           <th style="width: 5%">id</th>
+          <th>Img</th>
           <th>Name</th>
-          <th>Email</th>
-          <th>Role</th>
+          <th>Price</th>
+          <th>Rating</th>
           <th style="width: 5%"></th>
         </tr>
       </thead>
       <tbody>
-        <tr *ngFor="let item of users">
+        <tr *ngFor="let item of meals">
           <td>{{ item.id }}</td>
+          <td><img [src]="item.img" alt="" srcset=""></td>
           <td>{{ item.name }}</td>
-          <td>{{ item.email }}</td>
-          <td>{{ item.role }}</td>
+          <td>{{ item.price }}</td>
+          <td>{{ item.rate }}</td>
           <td>
             <button
               class="w-auto fs-6 border-0 fw-bold"
