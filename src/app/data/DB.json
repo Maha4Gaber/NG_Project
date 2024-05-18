@@ -1,31 +1,71 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Maha",
-      "password": "123456",
-      "role": "admin"
+      "id": "c48e",
+      "name": "Mana",
+      "email": "ab3@gmail.com",
+      "phone": "123456",
+      "role": "user"
     },
     {
-      "id": 2,
-      "name": "Rania",
-      "password": "123456",
-      "role": "user"
+      "id": "ebfe",
+      "name": "Mai",
+      "email": "ab4@gmail.com",
+      "phone": "123456",
+      "role": "admin"
     }
   ],
   "meals": [
     {
-      "id": 1,
-      "name": "meal1"
+      "id": "1",
+      "name": "Pizza Type A",
+      "price": "$45",
+      "rate": 3,
+      "img": "1.png",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ullam provident incidunt nostrum, recusandae molestias eum tenetur, facere adipisci accusantium maxime aliquam quasi temporibus a eaque alias ea expedita amet?      "
     },
     {
-      "id": 2,
-      "name": "meal2"
+      "id": "2",
+      "name": "Pizza Type B",
+      "price": "$51",
+      "rate": 3,
+      "img": "1.png",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ullam provident incidunt nostrum, recusandae molestias eum tenetur, facere adipisci accusantium maxime aliquam quasi temporibus a eaque alias ea expedita amet?      "
+    },
+    {
+      "id": "3",
+      "name": "Pizza Type C",
+      "price": "$30",
+      "rate": 4,
+      "img": "1.png",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ullam provident incidunt nostrum, recusandae molestias eum tenetur, facere adipisci accusantium maxime aliquam quasi temporibus a eaque alias ea expedita amet?      "
+    },
+    {
+      "id": "4",
+      "name": "Pizza Type d",
+      "price": "$45",
+      "rate": 5,
+      "img": "1.png",
+      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ullam provident incidunt nostrum, recusandae molestias eum tenetur, facere adipisci accusantium maxime aliquam quasi temporibus a eaque alias ea expedita amet?      "
+    },
+    {
+      "id": "b337",
+      "name": "Pizaa 212",
+      "price": "120 $",
+      "img": "C:\\fakepath\\pizza3.jpeg",
+      "text": "loream"
+    },
+    {
+      "id": "2058",
+      "name": "Pizza 1205",
+      "price": "50$",
+      "img": "C:\\fakepath\\pizza2.jpeg",
+      "text": "loream 2"
     }
   ],
   "reviews": [
     {
-      "id": 1,
+      "id": "1",
       "userid": "1",
       "username": "Maha",
       "text": "review"
@@ -33,17 +73,17 @@
   ],
   "orders": [
     {
-      "id": 1,
+      "id": "1",
       "mealid": 1,
       "userid": 1
     },
     {
-      "id": 2,
+      "id": "2",
       "mealid": 1,
       "userid": 1
     },
     {
-      "id": 3,
+      "id": "3",
       "mealid": 1,
       "userid": 1
     }

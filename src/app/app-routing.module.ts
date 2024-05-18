@@ -12,6 +12,10 @@ import { AddMealComponent } from './Dashbourd/add-meal/add-meal.component';
 import { AddAdminComponent } from './Dashbourd/add-admin/add-admin.component';
 import { UpdateMealComponent } from './Dashbourd/update-meal/update-meal.component';
 import { MainComponent } from './Dashbourd/main/main.component';
+import { UsersComponent } from './Dashbourd/users/users.component';
+import { OrdersComponent } from './Dashbourd/orders/orders.component';
+import { OrderComponent } from './Components/order/order.component';
+import { MealComponent } from './Dashbourd/meal/meal.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -22,8 +26,12 @@ const routes: Routes = [
   {path:'reviews',component:ReviewsComponent  },
   {path:'contact',component:ContactComponent  },
   {path:'login',component:LoginComponent  },
+  {path:'order/:id',component:OrderComponent  },
   {path:'addmeal',component:AddMealComponent  },
   {path:'addadmin',component:AddAdminComponent  },
+  {path:'showusers',component:UsersComponent  },
+  {path:'showmeal',component:MealComponent  },
+  {path:'showordes',component:OrdersComponent  },
   {path:'updatemeal/:id',component:UpdateMealComponent},
   {path:'dashboard',component:MainComponent  },
   {path:'**',component:ErorrComponent  },
