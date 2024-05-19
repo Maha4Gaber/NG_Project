@@ -13,6 +13,13 @@
       "email": "ab4@gmail.com",
       "phone": "123456",
       "role": "admin"
+    },
+    {
+      "id": "8512",
+      "name": "Alaa",
+      "age": 24,
+      "email": "ammahmed@ejada.com",
+      "phone": "112224566"
     }
   ],
   "meals": [
