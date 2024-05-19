@@ -23,6 +23,11 @@ export class MealComponent {
       error:(err)=>{console.log(err)}
     }) 
   }
+
+
+
+
+  
   delete(id:any){
     console.log(id);
     this.MealService.DeleteMeal(id).subscribe({

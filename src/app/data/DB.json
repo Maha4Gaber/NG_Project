@@ -13,6 +13,13 @@
       "email": "ab4@gmail.com",
       "phone": "123456",
       "role": "admin"
+    },
+    {
+      "id": "8512",
+      "name": "Alaa",
+      "age": 24,
+      "email": "ammahmed@ejada.com",
+      "phone": "112224566"
     }
   ],
   "meals": [
@@ -61,6 +68,13 @@
       "price": "50$",
       "img": "C:\\fakepath\\pizza2.jpeg",
       "text": "loream 2"
+    },
+    {
+      "id": "53be",
+      "name": "Ransh",
+      "price": "35$",
+      "img": "C:\\fakepath\\pizza2.jpeg",
+      "text": "rania"
     }
   ],
   "reviews": [

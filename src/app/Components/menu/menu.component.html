@@ -1,1 +1,74 @@
-<p>menu works!</p>
+<div class="wrapper">
+  <div class="border"></div>
+  <article class="menu">
+    <div *ngFor="let item of meals">
+      <div class="left">
+        <h3>{{item.name}}: {{item.price}}</h3>
+      </div>
+      <div class="left star">
+        <img src="images/star_full.png" class="noeffects" alt="" /><img
+          src="images/star_full.png"
+          class="noeffects"
+          alt=""
+        /><img src="images/star_full.png" class="noeffects" alt="" /><img
+          src="images/star_half_full.png"
+          class="noeffects"
+          alt=""
+        /><img src="images/star_empty.png" class="noeffects" alt="" />
+      </div>
+      <div class="right menu-order">
+        <a class="button" [routerLink]="'/order/' + item.id">Order Now</a>
+      </div>
+      <img
+        src="images/menu/pizza2.jpeg"
+        class="left clear item"
+        width="150"
+        alt=""
+      />
+      <p class="left">
+       {{item.text}}
+      </p>
+    </div>
+  </article>
+
+  <aside class="sidebar">
+    <h3>From The Blog</h3>
+    <ul class="blog">
+      <li>
+        <a href="#">Lorem Ipsum Dolor</a><br />
+        Orciint erdum condimen terdum nulla mcorper elit nam curabitur...
+      </li>
+      <li>
+        <a href="#">Praesent Et Eros</a><br />
+        Orciint erdum condimen terdum nulla mcorper elit nam curabitur...
+      </li>
+      <li>
+        <a href="#">Suspendisse In Neque</a><br />
+        Orciint erdum condimen terdum nulla mcorper elit nam curabitur...
+      </li>
+      <li>
+        <a href="#">Suspendisse In Neque</a><br />
+        Orciint erdum condimen terdum nulla mcorper elit nam curabitur...
+      </li>
+    </ul>
+    <div class="border3"></div>
+    <h3>Sidebar Widget</h3>
+    <img src="images/home/1.jpg" width="280" alt="" />
+    <p>
+      <strong>Pellentesque habitant morbi tristique</strong> senectus et netus
+      et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat
+      vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet
+      quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris
+      placerat eleifend leo. Quisque sit amet est et sapien ullamcorper
+      pharetra. Vestibulum erat wisi, condimentum sed,
+      <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit
+      eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus
+      enim ac dui. In turpis pulvinar facilisis. Ut felis.<br />
+      <a href="" class="right" style="padding-top: 7px"
+        ><strong>Continue Reading &raquo;</strong></a
+      >
+    </p>
+  </aside>
+  <div class="border2"></div>
+  <br />
+</div>
