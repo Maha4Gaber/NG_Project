@@ -23,6 +23,7 @@ import { UpdateMealComponent } from './Dashbourd/update-meal/update-meal.compone
 import { RouterOutlet } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MealComponent } from './Dashbourd/meal/meal.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { HttpClientModule } from '@angular/common/http';
     OrderComponent,
     LoginComponent,
     ErorrComponent,
-    UpdateMealComponent
+    UpdateMealComponent,
+    MealComponent
   ],
   imports: [
     BrowserModule,

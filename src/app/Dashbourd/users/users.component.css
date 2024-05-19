@@ -1,0 +1,17 @@
+button
+{
+  background-color: #9c5959;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: antiquewhite;
+}
+.table thead tr th{
+  font-weight: 600;
+  background-color: #9c5959 !important;
+  padding: 5px 20px !important;
+  color: antiquewhite !important;
+  font-size: 20px;
+}
+.table tbody tr td{
+  background-color: antiquewhite;
+}
