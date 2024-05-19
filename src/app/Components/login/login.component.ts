@@ -9,15 +9,13 @@ import { HttpClientModule } from '@angular/common/http';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  providers:[
-    UserService
-  ],
+  
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
   addForm: FormGroup;
 
-  constructor(private UserService: LoginComponent, private router: Router) {
+  constructor(private UserService: UserService, private router: Router) {
     this.addForm = new FormGroup({
       name: new FormControl("", Validators.required),
       age: new FormControl("", [Validators.required, Validators.min(18), Validators.max(30)]),
@@ -50,15 +48,15 @@ export class LoginComponent {
     //   email: this.addForm.get('email')?.value,
     //   phone: this.addForm.get('phone')?.value
     // };
-    console.log(this.addForm.value);
+    // console.log(this.addForm.value);
     
-    // this.UserService.addUser(this.addForm.values).subscribe({
-    //   next: () => {
-    //     console.log('user  added successfully');
-    //     this.router.navigate(['/']);
-    //   },
+    this.UserService.AddUser(this.addForm.value).subscribe({
+      next: () => {
+        console.log('user  added successfully');
+        this.router.navigate(['/']);
+      },
      
-    // });
+    });
   }
   
 
