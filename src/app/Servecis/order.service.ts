@@ -24,4 +24,7 @@ export class OrderService {
   DeleteOrder(id:number){
     return this.http.delete(this.DB_URL+"/"+id);
   }
+  GetAllReviews(){
+    return this.http.get('http://localhost:3000/reviews');
+  }
 }
