@@ -10,27 +10,27 @@
                     <label class="w-25">Age</label>
                     <input formControlName="age" class="form-control" type="number" />
                 </div>
-                @if(!AgeValid){
-                    <div style="text-align: center;color: palevioletred;">
+                <!-- @if(!AgeValid){ -->
+                    <div *ngIf="!AgeValid" style="text-align: center;color: palevioletred;">
                         <p>Age must be between 19 and 30</p>
                     </div>
-                }
+                <!-- } -->
                 <div class="form-group d-flex m-auto mt-2">
                     <label class="w-25">Email address </label>
                     <input formControlName="email" class="form-control" type="text" />
                 </div>
-                @if(!emailValid){
-                    <div style="text-align: center;color: palevioletred;">
+                <!-- @if(!emailValid){ -->
+                    <div  *ngIf="!emailValid" style="text-align: center;color: palevioletred;">
                         <p>Email must be correct</p>
                     </div>
-                }
+                <!-- } -->
                 <div class="form-group d-flex m-auto mt-2">
                     <label class="w-25">Phone number</label>
                     <input formControlName="phone" class="form-control" type="text" />
                 </div>
 
                 <div class="form-group text-center mt-2">
-                    <input (click)="addStudent()" class="btn btn-outline-primary m-3" type="submit" value="Add">
+                    <input (click)="addUser()" class="btn btn-outline-primary m-3" type="submit" value="Add">
                 </div>
             </form>
         </div>
