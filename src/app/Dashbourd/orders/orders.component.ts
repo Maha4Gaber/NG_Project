@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { MealService } from 'src/app/Servecis/meal.service';
 import { OrderService } from 'src/app/Servecis/order.service';
 
 @Component({
@@ -9,7 +10,8 @@ import { OrderService } from 'src/app/Servecis/order.service';
 })
 export class OrdersComponent {
   orders:any
-  constructor(private OrderService: OrderService ,private route: ActivatedRoute,private _router: Router){
+  mealname=''
+  constructor(private OrderService: OrderService,private MealService: MealService  ,private route: ActivatedRoute,private _router: Router){
   }
   ngOnInit(): void {
     this.OrderService.GetAllOrders().subscribe({

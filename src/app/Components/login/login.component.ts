@@ -36,7 +36,7 @@ export class LoginComponent {
   get phoneValid(){
     return this.addForm.controls["phone"].valid ; 
   }
-  user:any
+  users:any
 
   addUser() {
     if (this.addForm.invalid) {
@@ -46,12 +46,19 @@ export class LoginComponent {
     if (this.addForm.invalid) {
       return;
     }
-    this.UserService.AddUser(this.addForm.value).subscribe({
+    this.addForm.value.role='user'
+    let user=this.addForm.value
+    this.UserService.GetAllUsers().subscribe({
       next: (data) => {
         console.log(data);
-        this.user=data
-        console.log(this.user.id);
-        localStorage.setItem('userId',this.user.id)
+        this.users=data
+        // console.log(user.email);
+        let myuser=this.users.filter((item:any)  => item.email==user.email)
+        // console.log(myuser);
+        
+
+        localStorage.setItem('userId',myuser[0].id)
+        localStorage.setItem('userrole',myuser[0].role)
         localStorage.setItem('user','true')
 
 

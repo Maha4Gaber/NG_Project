@@ -3,14 +3,14 @@
     {
       "id": "c48e",
       "name": "Mana",
-      "email": "ab3@gmail.com",
+      "email": "Mo@gmail.com",
       "phone": "123456",
       "role": "user"
     },
     {
       "id": "ebfe",
       "name": "Mai",
-      "email": "ab4@gmail.com",
+      "email": "Mi@gmail.com",
       "phone": "123456",
       "role": "admin"
     },
@@ -18,64 +18,41 @@
       "id": "8512",
       "name": "Alaa",
       "age": 24,
-      "email": "ammahmed@ejada.com",
-      "phone": "112224566"
+      "email": "Al@ejada.com",
+      "phone": "112224566",
+      "role": "user"
     },
     {
       "id": "98b4",
       "name": "Maha",
       "age": "20",
-      "email": "Abc@gmail.com",
-      "phone": "0123456789"
+      "email": "Ma@gmail.com",
+      "phone": "0123456789",
+      "role": "admin"
     },
     {
-      "id": "eb53",
-      "name": "Maha",
-      "age": "22",
-      "email": "a@d.c",
-      "phone": "123465489"
+      "id": "55ff",
+      "name": "Rania",
+      "age": "23",
+      "email": "R@gmail.com",
+      "phone": "12345678910",
+      "role": "user"
     },
     {
-      "id": "3ad8",
-      "name": "dd",
-      "age": "dddd",
-      "email": "ddd@ff",
-      "phone": "cdddddddddddddd"
+      "id": "d908",
+      "name": "Hamza",
+      "age": "24",
+      "email": "H@gmail.com",
+      "phone": "012345678910",
+      "role": "user"
     },
     {
-      "id": "c04b",
-      "name": "Maha",
-      "age": "22",
-      "email": "A@G.c",
-      "phone": "12346680"
-    },
-    {
-      "id": "8b70",
-      "name": "xx",
-      "age": "xxxxxx",
-      "email": "a@df",
-      "phone": "xxxxxxxxxxx"
-    },
-    {
-      "id": "0a90",
-      "name": "xx",
-      "age": "xxxxxx",
-      "email": "a@df.s",
-      "phone": "xxxxxxxxxxx"
-    },
-    {
-      "id": "c632",
-      "name": "Maha",
-      "age": "21",
-      "email": "A@B.g",
-      "phone": "0123456"
-    },
-    {
-      "id": "ba80",
-      "name": "32",
-      "age": "22",
-      "email": "A@b.c",
-      "phone": "1023"
+      "id": "f115",
+      "name": "Androw",
+      "age": "25",
+      "email": "A@gmail.com",
+      "phone": "012345678910",
+      "role": "user"
     }
   ],
   "meals": [
@@ -141,32 +118,54 @@
       "text": "stibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra."
     },
     {
-      "id": "1",
+      "id": "2",
       "userid": "1",
       "username": "Rania",
       "text": "stibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra."
     },
     {
-      "id": "1",
+      "id": "3",
       "userid": "1",
       "username": "Mona",
       "text": "stibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra."
     },
     {
-      "id": "1",
+      "id": "4",
       "userid": "1",
       "username": "Alaa",
+      "text": "stibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra."
+    },
+    {
+      "id": "4",
+      "userid": "1",
+      "username": "Androw",
+      "text": "stibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra."
+    },
+    {
+      "id": "4",
+      "userid": "1",
+      "username": "Hamza",
       "text": "stibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra."
     }
   ],
   "orders": [
     {
-      "id": "1",
-      "mealid": 1,
-      "userid": 1,
-      "userName": "Maha",
-      "userAddress": "Maha",
-      "Payment": "viza"
+      "id": "fe7b",
+      "mealid": "3",
+      "userid": "f115",
+      "userName": "Androw",
+      "mealName": "Pizza Type B",
+      "userAddress": "Assuit",
+      "Payment": "debit"
+    },
+    {
+      "id": "8e7a",
+      "mealid": "53be",
+      "userid": "98b4",
+      "userName": "Rania",
+      "mealName": "Ransh",
+      "userAddress": "Assuit",
+      "Payment": "debit"
     }
   ]
 }

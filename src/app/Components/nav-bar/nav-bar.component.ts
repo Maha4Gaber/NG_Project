@@ -8,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class NavBarComponent implements OnInit {
   userid:any
   ngOnInit(): void {
+    
     this.userid=localStorage.getItem('user')
     if(localStorage.getItem('userId')){
       localStorage.setItem('user','true')
       
+    }
+    else{
+      localStorage.setItem('user','false')
     }
     
   }

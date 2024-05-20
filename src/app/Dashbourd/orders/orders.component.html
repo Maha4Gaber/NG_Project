@@ -14,18 +14,20 @@
       <thead>
         <tr>
           <th style="width: 5%">id</th>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Role</th>
+          <th>User Name</th>
+          <th>Meal Name</th>
+          <th>userAddress</th>
+          <th>Payment</th>
           <th style="width: 5%"></th>
         </tr>
       </thead>
       <tbody>
         <tr *ngFor="let item of orders">
           <td>{{ item.id }}</td>
-          <td>{{ item.name }}</td>
-          <td>{{ item.email }}</td>
-          <td>{{ item.role }}</td>
+          <td>{{ item.userName }}</td>
+          <td>{{ item.mealName }}</td>
+          <td>{{ item.userAddress }}</td>
+          <td>{{ item.Payment }}</td>
           <td>
             <button
               class="w-auto fs-6 border-0 fw-bold"
