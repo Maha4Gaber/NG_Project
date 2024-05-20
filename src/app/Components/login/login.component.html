@@ -8,7 +8,7 @@
                 </div>
                 <div class="form-group d-flex m-auto mt-2">
                     <label class="w-25">Age</label>
-                    <input formControlName="age" class="form-control" type="number" />
+                    <input formControlName="age" class="form-control" type="text" />
                 </div>
                 <!-- @if(!AgeValid){ -->
                     <div *ngIf="!AgeValid" style="text-align: center;color: palevioletred;">
@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="form-group text-center mt-2">
-                    <input (click)="addUser()" class="btn btn-outline-primary m-3" type="submit" value="Add">
+                    <input (click)="addUser()" class="button m-3" type="submit" value="Add">
                 </div>
             </form>
         </div>

@@ -1,65 +1,68 @@
-<!DOCTYPE html>
- <html lang="en">
- <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Order Form</title>
-     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-     <style>
-         .form-container {
-             display: flex;
-             flex-direction: column;
-             justify-content: space-between;
-             min-height: 100vh;
-         }
-         .form-content {
-             flex-grow: 1;
-         }
-         .button-container {
-             text-align: right;
-         }
-     </style>
- </head>
- <body>
-     <div class="container form-container">
-         <form>
-             <div class="row form-content">
-                 <div class="col-md-6">
-                     <div class="form-group">
-                         <label for="name">Name:</label>
-                         <input type="text" class="form-control" id="name" name="name" required>
-                     </div>
-                     <div class="form-group">
-                         <label for="address">Address:</label>
-                         <textarea class="form-control" id="address" name="address" required></textarea>
-                     </div>
-                     <div class="form-group">
-                         <label for="paymentType">Payment Type:</label>
-                         <select class="form-control" id="paymentType" name="paymentType" required>
-                             <option value="credit">Credit Card</option>
-                             <option value="debit">Debit Card</option>
-                             <option value="paypal">PayPal</option>
-                         </select>
-                     </div>
-                 </div>
-                 <div class="col-md-6">
-                     <div class="form-group">
-                         <label for="totalPrice">Price:</label>
-                         <!-- <p class="form-control" id="totalPrice" name="totalPrice" ></p> -->
-                     </div>
-                     <!-- <div class="form-group">
-                         <label for="feedback">Feedback:</label>
-                         <textarea class="form-control" id="feedback" name="feedback"></textarea>
-                     </div> -->
-                 </div>
-             </div>
-             <div class="row">
-                 <div class="col-md-12 button-container">
-                     <button type="submit" class="btn btn-primary" style="background-color: #9c5959;">Confirm Order</button>
-                 </div>
-             </div>
-         </form>
-     </div>
- </body>
- </html>
- 
+<div class="container form-container mb-5">
+  <form>
+    <div class="row form-content">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <textarea
+            class="form-control"
+            id="address"
+            name="address"
+            required
+          ></textarea>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="form-group">
+          <div class="form-group">
+            <label for="paymentType">Payment Type:</label>
+            <select
+              class="form-control"
+              id="paymentType"
+              name="paymentType"
+              required
+            >
+              <option value="credit">Credit Card</option>
+              <option value="debit">Debit Card</option>
+              <option value="paypal">PayPal</option>
+            </select>
+          </div>
+          <label for="totalPrice">Meal Name : {{meal.name}}</label>
+          <br>
+          <label for="totalPrice">Price: {{meal.price}}</label>
+          <br>
+          <!-- <label for="totalPrice">Price: {{meal.price}}</label> -->
+          <!-- <p class="form-control" id="totalPrice" name="totalPrice" ></p> -->
+        </div>
+        <button type="submit" class="button" style="background-color: #9c5959">
+          Confirm Order
+        </button>
+        <!-- <div class="form-group">
+                        <label for="feedback">Feedback:</label>
+                        <textarea class="form-control" id="feedback" name="feedback"></textarea>
+                    </div> -->
+      </div>
+    </div>
+    <!-- <div class="row">
+          <div class="col-md-12 button-container">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              style="background-color: #9c5959"
+            >
+              Confirm Order
+            </button>
+          </div>
+        </div> -->
+  </form>
+</div>

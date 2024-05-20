@@ -12,7 +12,7 @@ export class MealService {
   GetAllMeals(){
     return this.http.get(this.DB_URL);
   }
-  GetMealByID(id:number){
+  GetMealByID(id:any){
     return this.http.get(this.DB_URL+"/"+id);
   }
   AddMeal(Meal:any){
