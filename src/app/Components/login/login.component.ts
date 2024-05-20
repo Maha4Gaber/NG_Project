@@ -36,23 +36,25 @@ export class LoginComponent {
   get phoneValid(){
     return this.addForm.controls["phone"].valid ; 
   }
+  user:any
 
   addUser() {
     if (this.addForm.invalid) {
       return;
     }
 
-    // const user:   UserService = {
-    //   name: this.addForm.get('name')?.value,
-    //   age: this.addForm.get('age')?.value,
-    //   email: this.addForm.get('email')?.value,
-    //   phone: this.addForm.get('phone')?.value
-    // };
-    // console.log(this.addForm.value);
-    
+    if (this.addForm.invalid) {
+      return;
+    }
     this.UserService.AddUser(this.addForm.value).subscribe({
-      next: () => {
-        console.log('user  added successfully');
+      next: (data) => {
+        console.log(data);
+        this.user=data
+        console.log(this.user.id);
+        localStorage.setItem('userId',this.user.id)
+        localStorage.setItem('user','true')
+
+
         this.router.navigate(['/']);
       },
      
