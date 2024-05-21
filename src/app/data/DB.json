@@ -96,18 +96,25 @@
       "text": "loream"
     },
     {
-      "id": "2058",
-      "name": "Pizza 1205",
-      "price": "50$",
-      "img": "C:\\fakepath\\pizza2.jpeg",
-      "text": "loream 2"
-    },
-    {
       "id": "53be",
       "name": "Ransh",
       "price": "35$",
       "img": "C:\\fakepath\\pizza2.jpeg",
       "text": "rania"
+    },
+    {
+      "id": "d7c7",
+      "name": "Berger",
+      "price": "23$",
+      "img": "",
+      "text": "Berger for Maha"
+    },
+    {
+      "id": "1813",
+      "name": "Pasta",
+      "price": "50$",
+      "img": "",
+      "text": "Pasta"
     }
   ],
   "reviews": [
@@ -165,6 +172,24 @@
       "userName": "Rania",
       "mealName": "Ransh",
       "userAddress": "Assuit",
+      "Payment": "debit"
+    },
+    {
+      "id": "1952",
+      "mealid": "1",
+      "userid": "55ff",
+      "userName": "Maha",
+      "mealName": "Pizza Type A",
+      "userAddress": "Assuit",
+      "Payment": "paypal"
+    },
+    {
+      "id": "9157",
+      "mealid": "1",
+      "userid": "ebfe",
+      "userName": "Mai",
+      "mealName": "Pizza Type A",
+      "userAddress": "Alex",
       "Payment": "debit"
     }
   ]
